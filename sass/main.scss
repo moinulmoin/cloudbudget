@@ -1,0 +1,38 @@
+@import "reset";
+@import "variable";
+@import "extend";
+
+body{
+    font-size: $default-font-size;
+}
+
+// header {
+//     background-image: url();
+// }
+
+.container{
+    padding: 0 150px;
+    nav {
+        background-color: orangered;
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            align-items: center;
+        }
+        .login-bar {
+            display: flex;
+            align-items: center;
+            .select-flag {
+                display: flex;
+                align-items: center;
+            }
+        }
+        .login-btn {
+            width: 100px;
+            height: 40px;
+            border: 1px solid $primary-color;
+        }
+    }
+}
