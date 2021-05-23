@@ -4,11 +4,10 @@
 	// live sass compiler settings
 	"liveSassCompile.settings.formats": [
 		{
-			"format": "compressed",
 			"extensionName": ".css",
 			"savePath": "/css"
 		}
 	],
-	"liveSassCompile.settings.generateMap": false
-	// "editor.wordWrap": "on"
+	"liveSassCompile.settings.generateMap": false,
+	"editor.wordWrap": "on"
 }
