@@ -1,11 +1,11 @@
-#about .container .about-content h3, #features .container h3, #technology .container h3 {
+#about .container .about-content h3, #features .container h3, #technology .container h3, #stay-focus .container .stay-focus-content h3, #contact .container .contact-content h3 {
   font-family: inherit;
   font-size: 36px;
   font-weight: 700;
   text-align: center;
 }
 
-header .container nav ul, header .container nav .login-bar, header .container nav .login-bar .select-flag, #about .container, #about .container .about-image .play-btn {
+header .container nav ul, header .container nav .login-bar, header .container nav .login-bar .select-flag, #about .container, #about .container .about-image .play-btn, #stay-focus .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,6 +53,7 @@ p {
 header {
   background: -webkit-gradient(linear, left top, right top, from(rgba(213, 32, 71, 0.8)), to(rgba(238, 61, 27, 0.8))), url("../img/hero-bg.jpg");
   background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url("../img/hero-bg.jpg");
+  height: 100vh;
   padding-top: 40px;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -141,7 +142,7 @@ header .container .hero-content button:hover {
 
 #about {
   color: #000000;
-  padding: 90px 0;
+  padding: 100px 0;
 }
 
 #about .container {
@@ -149,6 +150,8 @@ header .container .hero-content button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 150px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #about .container .about-content {
@@ -162,7 +165,6 @@ header .container .hero-content button:hover {
 
 #about .container .about-content p {
   margin: 45px 0 25px;
-  text-align: justify;
 }
 
 #about .container .about-content a {
@@ -188,7 +190,7 @@ header .container .hero-content button:hover {
 }
 
 #features {
-  padding: 60px 0 220px;
+  padding: 80px 0 220px;
   background-color: #FAFAFA;
 }
 
@@ -243,7 +245,7 @@ header .container .hero-content button:hover {
 }
 
 #technology {
-  padding: 60px 0 120px;
+  padding: 80px 0 120px;
 }
 
 #technology .container {
@@ -283,8 +285,8 @@ header .container .hero-content button:hover {
 
 #technology .container .technology-list .technology-item .technology-item-head img {
   position: absolute;
-  right: 88px;
-  bottom: -8px;
+  right: 95px;
+  bottom: -5px;
   width: 65px;
 }
 
@@ -300,4 +302,160 @@ header .container .hero-content button:hover {
 #technology .container .technology-list .technology-item .technology-item-content p {
   margin-top: 15px;
   padding: 0 8px;
+}
+
+#stay-focus {
+  color: #ffffff;
+  background-color: #ED4C5C;
+  padding: 100px 0;
+}
+
+#stay-focus .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 150px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#stay-focus .container .stay-focus-content {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+#stay-focus .container .stay-focus-content h3 {
+  text-align: left;
+}
+
+#stay-focus .container .stay-focus-content p {
+  margin: 45px 0 25px;
+}
+
+#stay-focus .container .stay-focus-content .icons {
+  font-size: 32px;
+}
+
+#stay-focus .container .stay-focus-content .icons svg.svg-inline--fa {
+  margin-right: 20px;
+}
+
+#contact {
+  background-color: #ffffff;
+  padding: 100px 0;
+}
+
+#contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 150px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contact .container .contact-content {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+#contact .container .contact-content h3 {
+  text-align: left;
+}
+
+#contact .container .contact-content p {
+  margin-top: 60px;
+  font-size: 1.6rem;
+  line-height: 25px;
+}
+
+#contact .container .contact-form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+#contact .container .contact-form .input-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact .container .contact-form .input-group input {
+  width: 250px;
+}
+
+#contact .container .contact-form input {
+  width: 100%;
+  display: block;
+  height: 60px;
+  color: #13274380;
+  padding: 0 20px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  border: 1px solid #333333;
+}
+
+#contact .container .contact-form select {
+  width: 100%;
+  display: block;
+  height: 60px;
+  color: #13274380;
+  padding: 0 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border: 1px solid #333333;
+}
+
+#contact .container .contact-form button {
+  width: 160px;
+  height: 50px;
+  background-color: #ED4C5C;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+footer {
+  padding: 90px 0 40px;
+}
+
+footer .container {
+  padding: 0 150px;
+}
+
+footer .container .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 70px;
+}
+
+footer .container .footer-content .footer-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+footer .container .footer-content .footer-item ul li {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+footer .container .footer-content .footer-social ul .footer-social-icons .svg-inline--fa {
+  margin-right: 15px;
+}
+
+footer .container .copyright {
+  font-size: 12px;
 }
